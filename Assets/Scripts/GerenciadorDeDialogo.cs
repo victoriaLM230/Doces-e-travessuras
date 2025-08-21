@@ -31,7 +31,7 @@ public class GerenciadorDeDialogo : MonoBehaviour
         if (falasNPC.Length == 0 || falasJogador.Length == 0) return;
 
         indiceFala = 0;
-        painelDialogo.SetActive(true);
+        painelDialogo.SetActive(false);
         AtualizarFalas();
         dialogoAtivo = true;
 

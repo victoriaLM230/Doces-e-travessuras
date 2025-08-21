@@ -13,7 +13,7 @@ public class InteracaoBruxa : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        gerenciadorDialogo.IniciarDialogo();
+            gerenciadorDialogo.IniciarDialogo();
         if (jogadorPerto && Input.GetKeyDown(KeyCode.E))
         {
             gerenciadorDialogo.npcBruxa = this.gameObject;

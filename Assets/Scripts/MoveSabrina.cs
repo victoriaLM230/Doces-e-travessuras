@@ -1,7 +1,9 @@
 using UnityEngine;
 
+
 public class MoveSabrina : MonoBehaviour
 {
+    
     [Header("Movimento")]
 
     public float velocidade = 5f;
@@ -49,7 +51,7 @@ public class MoveSabrina : MonoBehaviour
 
         float horizontal = Input.GetAxisRaw("Horizontal");
 
-        rb.linearVelocity = new Vector2(horizontal * velocidade, rb.linearVelocity.y);
+        rb.velocity = new Vector2(horizontal * velocidade, rb.velocity.y);
 
 
 
@@ -59,7 +61,7 @@ public class MoveSabrina : MonoBehaviour
 
         {
 
-            rb.linearVelocity = new Vector2(rb.linearVelocity.x, forcaPulo);
+            rb.velocity = new Vector2(rb.velocity.x, forcaPulo);
 
         }
         if (estaNoChao && horizontal != 0 && !tocandoPasso)
