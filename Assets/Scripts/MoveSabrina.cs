@@ -22,7 +22,7 @@ public class MoveSabrina : MonoBehaviour
     public LayerMask camadaChao;
 
 
-
+    private float horizontal;
     private Rigidbody2D rb;
 
     private bool estaNoChao;
@@ -32,8 +32,8 @@ public class MoveSabrina : MonoBehaviour
     void Start()
 
     {
-
         rb = GetComponent<Rigidbody2D>();
+        print(rb);
 
     }
 
@@ -43,7 +43,7 @@ public class MoveSabrina : MonoBehaviour
 
     {
 
-        // Verifica se está no chão usando OverlapCircle 
+        // Verifica se estï¿½ no chï¿½o usando OverlapCircle 
 
         estaNoChao = Physics2D.OverlapCircle(checagemChao.position, raioChao, camadaChao);
 
@@ -51,10 +51,11 @@ public class MoveSabrina : MonoBehaviour
 
         // Movimento horizontal 
 
-        float horizontal = Input.GetAxisRaw("Horizontal");
+        horizontal = Input.GetAxisRaw("Horizontal");
+        
 
-        rb.velocity = new Vector2(horizontal * velocidade, rb.velocity.y);
-
+        rb.linearVelocity = new Vector2(horizontal * velocidade, rb.linearVelocity.y);
+        print(rb.linearVelocityX);
 
 
         // Pular 
@@ -63,19 +64,17 @@ public class MoveSabrina : MonoBehaviour
 
         {
 
-            rb.velocity = new Vector2(rb.velocity.x, forcaPulo);
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, forcaPulo);
 
         }
 
     }
 
-
-
     void OnDrawGizmosSelected()
 
     {
 
-        // Desenha o círculo da checagem de chão no editor 
+        // Desenha o cï¿½rculo da checagem de chï¿½o no editor 
 
         if (checagemChao != null)
 
