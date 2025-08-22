@@ -4,6 +4,7 @@ using UnityEngine;
 public class MoveSabrina : MonoBehaviour
 {
     
+
     [Header("Movimento")]
 
     public float velocidade = 5f;
@@ -25,10 +26,6 @@ public class MoveSabrina : MonoBehaviour
     private Rigidbody2D rb;
 
     private bool estaNoChao;
-    [Header("Audio")]
-    public AudioSource audioSource;
-    public AudioClip somPasso;
-    public bool tocandoPasso = false;
 
 
 
@@ -45,7 +42,12 @@ public class MoveSabrina : MonoBehaviour
     void Update()
 
     {
+
+        // Verifica se está no chão usando OverlapCircle 
+
         estaNoChao = Physics2D.OverlapCircle(checagemChao.position, raioChao, camadaChao);
+
+
 
         // Movimento horizontal 
 
@@ -64,27 +66,28 @@ public class MoveSabrina : MonoBehaviour
             rb.velocity = new Vector2(rb.velocity.x, forcaPulo);
 
         }
-        if (estaNoChao && horizontal != 0 && !tocandoPasso)
+
+    }
+
+
+
+    void OnDrawGizmosSelected()
+
+    {
+
+        // Desenha o círculo da checagem de chão no editor 
+
+        if (checagemChao != null)
+
         {
-            StartCoroutine(TocarSomPasso());
-            System.Collections.IEnumerator TocarSomPasso()
-            {
-                tocandoPasso = true;
-                audioSource.PlayOneShot(somPasso);
-                yield return new WaitForSeconds(somPasso.length);
-                tocandoPasso = false;
-            }
+
+            Gizmos.color = Color.green;
+
+            Gizmos.DrawWireSphere(checagemChao.position, raioChao);
 
         }
+
     }
-    void OnDrawGizmosSelected()
-    {
-        // Desenha o círculo da checagem de chão no editor
-        if (checagemChao != null)
-        {
-            Gizmos.color = Color.green;
-            Gizmos.DrawWireSphere(checagemChao.position, raioChao);
-        }
-    }
+
 }
 
