@@ -26,6 +26,7 @@ public class MoveSabrina : MonoBehaviour
     private Rigidbody2D rb;
 
     private bool estaNoChao;
+    public bool PodeMexer;
 
 
 

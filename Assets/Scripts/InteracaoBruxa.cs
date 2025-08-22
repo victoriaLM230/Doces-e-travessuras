@@ -14,16 +14,20 @@ public class InteracaoBruxa : MonoBehaviour
     void Update()
     {
             gerenciadorDialogo.IniciarDialogo();
-        if (jogadorPerto && Input.GetKeyDown(KeyCode.E))
-        {
-            gerenciadorDialogo.npcBruxa = this.gameObject;
-        }
+        if  (jogadorPerto && !gerenciadorDialogo.dialogoAtivo && Input.GetKeyDown(KeyCode.E))
+            {
+                gerenciadorDialogo.IniciarDialogo();
+                gerenciadorDialogo.npcBruxa = this.gameObject;
+            }
+    
+        
     }
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
             jogadorPerto = true;
+            Debug.Log("Jogador entrou na área da bruxa");
         }
     }
     void OnTriggerExit2D(Collider2D other)

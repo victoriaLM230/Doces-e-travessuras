@@ -11,10 +11,12 @@ public class GerenciadorDeDialogo : MonoBehaviour
     public string[] falasJogador;
     public GameObject npcBruxa;
     private int indiceFala = 0;
-    private bool dialogoAtivo = false;
+    public bool dialogoAtivo = false;
     private bool esperandoEscolha = false;
     void Start()
     {
+        painelDialogo.SetActive(false);
+        painelEscolhas.SetActive(false);
 
     }
 
@@ -31,11 +33,16 @@ public class GerenciadorDeDialogo : MonoBehaviour
         if (falasNPC.Length == 0 || falasJogador.Length == 0) return;
 
         indiceFala = 0;
-        painelDialogo.SetActive(false);
+        painelDialogo.SetActive(true); // ATIVA o painel (corrigido)
         AtualizarFalas();
         dialogoAtivo = true;
 
-        Time.timeScale = 0f; // Pausa o jogo enquanto fala
+        // Aqui você desativa o movimento do personagem
+        GameObject jogador = GameObject.FindGameObjectWithTag("Player");
+        if (jogador != null)
+        {
+            jogador.GetComponent<MoveSabrina>().PodeMexer = false; // Exemplo
+        }
     }
 
     void AvancarFala()
@@ -75,7 +82,7 @@ public class GerenciadorDeDialogo : MonoBehaviour
     {
         painelDialogo.SetActive(false);
         dialogoAtivo = false;
-        Time.timeScale = 1f;
+        
 
         // Faz a bruxa desaparecer após o diálogo
         if (npcBruxa != null)
