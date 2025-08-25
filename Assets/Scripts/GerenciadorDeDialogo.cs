@@ -32,7 +32,7 @@ public class GerenciadorDeDialogo : MonoBehaviour
 
     void Update()
     {
-        if (dialogoAtivo && !esperandoEscolha && Input.GetKeyDown(KeyCode.T))
+        if (dialogoAtivo && !esperandoEscolha && Input.GetKeyDown(KeyCode.Space))
         {
             AvancarFala();
         }
