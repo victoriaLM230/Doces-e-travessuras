@@ -40,7 +40,7 @@ public class GerenciadorDeDialogo : MonoBehaviour
 
     public void IniciarDialogo()
     {
-        Debug.Log("iniciarDialogo");
+        
         if (falasNPC.Length == 0 || falasJogador.Length == 0) return;
 
         indiceFala = 0;

@@ -23,6 +23,7 @@ public class InteracaoBruxa : MonoBehaviour
     }
     void OnTriggerEnter2D(Collider2D other)
     {
+        Debug.Log("deuCerto");
         if (other.CompareTag("Player"))
         {
             jogadorPerto = true;
