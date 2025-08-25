@@ -66,7 +66,7 @@ public class GerenciadorDeDialogo : MonoBehaviour
             if (indiceFala == falasNPC.Length - 1)
             {
                 esperandoEscolha = true;
-                Invoke(nameof(MostrarEscolhas), 0.5f);
+                Invoke(nameof(MostrarEscolhas), 2f);
             }
         }
         else if (!esperandoEscolha)
