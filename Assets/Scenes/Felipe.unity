@@ -843,7 +843,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidade: 5
-  forcaPulo: 12
   checagemChao: {fileID: 1814053512}
   raioChao: 0.2
   camadaChao:
@@ -1147,8 +1146,8 @@ Transform:
   m_GameObject: {fileID: 609060730}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.0168, y: -3.4, z: 0}
-  m_LocalScale: {x: 21.7737, y: 3.2201, z: 1}
+  m_LocalPosition: {x: 0.2154, y: -3.4, z: 0}
+  m_LocalScale: {x: 107.635216, y: 3.2201, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1211,6 +1210,7 @@ GameObject:
   - component: {fileID: 694280898}
   - component: {fileID: 694280897}
   - component: {fileID: 694280900}
+  - component: {fileID: 694280901}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1336,6 +1336,21 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
+--- !u!114 &694280901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 694280896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdb82c5893139b643b6ee3311d05b814, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jogador: {fileID: 581586136}
+  suavizacao: -10
+  offset: {x: 0, y: 0, z: 0}
 --- !u!1 &716116004
 GameObject:
   m_ObjectHideFlags: 0

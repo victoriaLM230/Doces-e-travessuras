@@ -8,20 +8,17 @@ public class GerenciadorDeDialogo : MonoBehaviour
     public TextMeshProUGUI textoNPC;
     public TextMeshProUGUI textoJogador;
     public GameObject painelEscolhas;
-
     public string[] falasNPC;
     public string[] falasJogador;
-
     public string[] falasPosBemNPC;
     public string[] falasPosBemJogador;
     public string[] falasPosMalNPC;
     public string[] falasPosMalJogador;
-
     public GameObject npcBruxa;
-
-    private int indiceFala = 0;
+    private int indiceFala = -1;
     public bool dialogoAtivo = false;
     private bool esperandoEscolha = false;
+     int moralidade = 0;
 
     void Start()
     {
@@ -53,6 +50,9 @@ public class GerenciadorDeDialogo : MonoBehaviour
         {
             jogador.GetComponent<MoveSabrina>().PodeMexer = false;
         }
+
+        
+
     }
 
     void AvancarFala()
@@ -128,18 +128,18 @@ public class GerenciadorDeDialogo : MonoBehaviour
     {
         painelDialogo.SetActive(false);
         dialogoAtivo = false;
-
-        GameObject jogador = GameObject.FindGameObjectWithTag("Player");
-        if (jogador != null)
-        {
-            jogador.GetComponent<MoveSabrina>().PodeMexer = true;
-        }
-
+        // Some com a bruxa
         if (npcBruxa != null)
         {
-            npcBruxa.SetActive(false);
+            npcBruxa.SetActive(false); // Ou Destroy(npcBruxa);
         }
     }
+    public void PerdaDeSuaMoralidade() 
+    {
+        if (moralidade < 0) ;
+    }
+
+
 }
 
 
