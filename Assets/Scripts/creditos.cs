@@ -1,11 +1,11 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class creditos : MonoBehaviour
+public class Creditos : MonoBehaviour
 {
-    public string gameSceneName = "creditos";
+    [SerializeField] private string gameSceneName = "creditos";
 
-    public void butomcreditos()
+    public void BotaoCreditos()
     {
         SceneManager.LoadScene(gameSceneName);
     }

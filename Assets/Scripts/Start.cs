@@ -3,12 +3,11 @@ using UnityEngine.SceneManagement;
 
 public class Start : MonoBehaviour
 {
-    // Nome da cena do jogo que será carregada
-    public string gameSceneName = "GameScene";
+    [SerializeField] private string gameSceneName = "GameScene";
 
-    // Função para ser chamada pelo botão
-    public void OnStartButtonPressed()
+    public void Botaoparamenu()
     {
+        print("ooooo");
         SceneManager.LoadScene(gameSceneName);
     }
 }

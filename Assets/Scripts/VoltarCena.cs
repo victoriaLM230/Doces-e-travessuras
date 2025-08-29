@@ -1,13 +1,11 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class VoltarCena : MonoBehaviour
+public class voltarcena : MonoBehaviour
 {
-    // Nome da cena do jogo que será carregada
-    public string gameSceneName = "jesus";
+    [SerializeField] private string gameSceneName = "creditos";
 
-    // Função para ser chamada pelo botão
-    public void butomcreditos()
+    public void BotaoCreditos()
     {
         SceneManager.LoadScene(gameSceneName);
     }
