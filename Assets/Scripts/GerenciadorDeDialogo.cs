@@ -18,7 +18,7 @@ public class GerenciadorDeDialogo : MonoBehaviour
     private int indiceFala = -1;
     public bool dialogoAtivo = false;
     private bool esperandoEscolha = false;
-     int moralidade = 0;
+     
 
     void Start()
     {
