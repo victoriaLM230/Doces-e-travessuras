@@ -14,5 +14,11 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/creditos.unity
     guid: da3b3227f477aeb42909b6fa9cca916d
+  - enabled: 1
+    path: Assets/Scenes/Felipe.unity
+    guid: 8f4bdd3e2baeeb842b7543167962517d
+  - enabled: 1
+    path: Assets/Scenes/InteriorCabana.unity
+    guid: 376a97f1e31e3384aabe1951d8af15fd
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

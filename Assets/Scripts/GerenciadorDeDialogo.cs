@@ -134,10 +134,7 @@ public class GerenciadorDeDialogo : MonoBehaviour
             npcBruxa.SetActive(false); // Ou Destroy(npcBruxa);
         }
     }
-    public void PerdaDeSuaMoralidade() 
-    {
-        if (moralidade < 0) ;
-    }
+    
 
 
 }
