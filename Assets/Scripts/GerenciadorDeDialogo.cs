@@ -1,30 +1,33 @@
 using TMPro;
 using UnityEngine;
 using System.Collections;
-
+using UnityEngine.UI;
 public class GerenciadorDeDialogo : MonoBehaviour
 {
     public GameObject painelDialogo;
     public TextMeshProUGUI textoNPC;
     public TextMeshProUGUI textoJogador;
+
     public GameObject painelEscolhas;
+    public Button botaoBem;
+    public Button botaoMal;
+
     public string[] falasNPC;
     public string[] falasJogador;
-    public string[] falasPosBemNPC;
-    public string[] falasPosBemJogador;
-    public string[] falasPosMalNPC;
-    public string[] falasPosMalJogador;
-    public GameObject npcBruxa;
-    private int indiceFala = -1;
+
+    public GameObject npcBruxa; // Referência ao GameObject da bruxa
+    public BocaSeMechendo bocaAnimada; // ? Referência à boca animada
+
+    private int indiceFala = 0;
     public bool dialogoAtivo = false;
     private bool esperandoEscolha = false;
-     
+
+    public int moralidade = 0; // Começa neutro
 
     void Start()
     {
-        painelDialogo.SetActive(false);
-        painelEscolhas.SetActive(false);
-        dialogoAtivo = false;
+        botaoBem.onClick.AddListener(EscolherBem);
+        botaoMal.onClick.AddListener(EscolherMal);
     }
 
     void Update()
@@ -37,7 +40,6 @@ public class GerenciadorDeDialogo : MonoBehaviour
 
     public void IniciarDialogo()
     {
-        
         if (falasNPC.Length == 0 || falasJogador.Length == 0) return;
 
         indiceFala = 0;
@@ -45,14 +47,7 @@ public class GerenciadorDeDialogo : MonoBehaviour
         AtualizarFalas();
         dialogoAtivo = true;
 
-        GameObject jogador = GameObject.FindGameObjectWithTag("Player");
-        if (jogador != null)
-        {
-            jogador.GetComponent<MoveSabrina>().PodeMexer = false;
-        }
-
-        
-
+        Time.timeScale = 0f; // Pausa o jogo enquanto fala
     }
 
     void AvancarFala()
@@ -66,11 +61,14 @@ public class GerenciadorDeDialogo : MonoBehaviour
             if (indiceFala == falasNPC.Length - 1)
             {
                 esperandoEscolha = true;
-                Invoke(nameof(MostrarEscolhas), 2f);
+                Invoke(nameof(MostrarEscolhas), 0.5f);
             }
         }
-        else if (!esperandoEscolha)
+        else
         {
+            if (bocaAnimada != null)
+                bocaAnimada.falando = false;
+
             FecharDialogo();
         }
     }
@@ -79,6 +77,9 @@ public class GerenciadorDeDialogo : MonoBehaviour
     {
         textoNPC.text = falasNPC[indiceFala];
         textoJogador.text = falasJogador[indiceFala];
+
+        if (bocaAnimada != null)
+            bocaAnimada.falando = true;
     }
 
     void MostrarEscolhas()
@@ -86,57 +87,52 @@ public class GerenciadorDeDialogo : MonoBehaviour
         painelEscolhas.SetActive(true);
     }
 
-    
+    void EscolherBem()
+    {
+        moralidade += 1;
+        Debug.Log("Escolheu o bem. Moralidade: " + moralidade);
+        ChecarCaminho();
+    }
 
-    public void EscolherBem()
+    void EscolherMal()
+    {
+        moralidade -= 1;
+        Debug.Log("Escolheu o mal. Moralidade: " + moralidade);
+        ChecarCaminho();
+    }
+
+    void ChecarCaminho()
     {
         painelEscolhas.SetActive(false);
         esperandoEscolha = false;
 
-        StartCoroutine(MostrarFalasAlternadas(falasPosBemNPC, falasPosBemJogador));
-    }
-
-    public void EscolherMal()
-    {
-        painelEscolhas.SetActive(false);
-        esperandoEscolha = false;
-
-        StartCoroutine(MostrarFalasAlternadas(falasPosMalNPC, falasPosMalJogador));
-    }
-
-   
-
-    IEnumerator MostrarFalasAlternadas(string[] falasNPC, string[] falasJogador)
-    {
-        int total = Mathf.Min(falasNPC.Length, falasJogador.Length);
-
-        for (int i = 0; i < total; i++)
+        if (moralidade < 0)
         {
-            textoNPC.text = falasNPC[i];
-            textoJogador.text = "";
-            yield return new WaitForSecondsRealtime(2f);
-
-            textoNPC.text = "";
-            textoJogador.text = falasJogador[i];
-            yield return new WaitForSecondsRealtime(2f);
+            textoNPC.text = "Você sente a escuridão crescendo...";
+        }
+        else
+        {
+            textoNPC.text = "A luz continua dentro de você.";
         }
 
-        FecharDialogo();
+        if (bocaAnimada != null)
+            bocaAnimada.falando = true;
+
+        Invoke(nameof(FecharDialogo), 2f);
     }
 
     public void FecharDialogo()
     {
         painelDialogo.SetActive(false);
         dialogoAtivo = false;
-        // Some com a bruxa
+        Time.timeScale = 1f;
+
+        if (bocaAnimada != null)
+            bocaAnimada.falando = false;
+
         if (npcBruxa != null)
         {
-            npcBruxa.SetActive(false); // Ou Destroy(npcBruxa);
+            npcBruxa.SetActive(false); // Ou: Destroy(npcBruxa);
         }
     }
-    
-
-
 }
-
-
