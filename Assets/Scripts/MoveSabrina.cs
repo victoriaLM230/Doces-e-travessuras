@@ -30,11 +30,12 @@ public class MoveSabrina : MonoBehaviour
 
         // Movimento horizontal 
         horizontal = Input.GetAxisRaw("Horizontal");
+       
 
         if (PodeMexer)
         {
-            // Substituído .velocity por .linearVelocity
-            rb.linearVelocity = new Vector2(horizontal * velocidade, rb.linearVelocity.y);
+            //Substituído .velocity por .linearVelocity
+           rb.linearVelocity = new Vector2(horizontal * velocidade, rb.linearVelocity.y);
         }
 
         // Som de movimento (somente se pressionando A ou D)
