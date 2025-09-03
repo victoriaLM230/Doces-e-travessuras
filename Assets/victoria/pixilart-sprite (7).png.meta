@@ -1,25 +1,22 @@
 fileFormatVersion: 2
-guid: c350fb76e4896d646a01a3200bd2f50a
+guid: 96fbdf8468d74fe4d80ee1e1b8755174
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3475582713512457235
-    second: pixilart-sprite (3) 2_0
+      213: 2699721380527466488
+    second: pixilart-sprite (7)_0
   - first:
-      213: 7432613568402164004
-    second: pixilart-sprite (3) 2_1
+      213: -6317328553093526140
+    second: pixilart-sprite (7)_1
   - first:
-      213: 2423154289581366112
-    second: pixilart-sprite (3) 2_2
+      213: -4293931877964787223
+    second: pixilart-sprite (7)_2
   - first:
-      213: 2614652253349564884
-    second: pixilart-sprite (3) 2_3
+      213: -7534931932984655772
+    second: pixilart-sprite (7)_3
   - first:
-      213: -6807301255019327896
-    second: pixilart-sprite (3) 2_4
-  - first:
-      213: 33499818790309382
-    second: pixilart-sprite (3) 2_5
+      213: 9135284674282138978
+    second: pixilart-sprite (7)_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -52,7 +49,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -66,7 +63,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 500
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -90,7 +87,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -128,111 +125,111 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Sabrina_0
+      name: pixilart-sprite (7)_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1600
-        height: 1600
+        x: 25
+        y: 18
+        width: 55
+        height: 59
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: e87bc40cc266b9641bc116dc2da40d95
-      internalID: -9002815359668481571
+      spriteID: 8f7edd6ba46577520800000000000000
+      internalID: 2699721380527466488
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sabrina_1
+      name: pixilart-sprite (7)_1
       rect:
         serializedVersion: 2
-        x: 1600
-        y: 0
-        width: 1600
-        height: 1600
+        x: 125
+        y: 14
+        width: 52
+        height: 63
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: ad37899e2cb70bf46922951f9876bfe7
-      internalID: -6505331755145360271
+      spriteID: 48d8d6fc6275458a0800000000000000
+      internalID: -6317328553093526140
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sabrina_2
+      name: pixilart-sprite (7)_2
       rect:
         serializedVersion: 2
-        x: 3200
-        y: 0
-        width: 1600
-        height: 1600
+        x: 226
+        y: 11
+        width: 51
+        height: 67
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: f0d9a0852bbce254e9642453a442c569
-      internalID: -3079686461143670477
+      spriteID: 9e1de2c05b3e864c0800000000000000
+      internalID: -4293931877964787223
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sabrina_3
+      name: pixilart-sprite (7)_3
       rect:
         serializedVersion: 2
-        x: 4800
-        y: 0
-        width: 1600
-        height: 1600
+        x: 325
+        y: 14
+        width: 52
+        height: 63
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 0e3f25788c31b8543b3b15a02e1bdfb8
-      internalID: 980864212213892884
+      spriteID: 460c3b7245b8e6790800000000000000
+      internalID: -7534931932984655772
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sabrina_4
+      name: pixilart-sprite (7)_4
       rect:
         serializedVersion: 2
-        x: 6400
-        y: 0
-        width: 1600
-        height: 1600
+        x: 424
+        y: 11
+        width: 53
+        height: 67
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 9f7933c936733c34abdaf0513ab96685
-      internalID: -4181564317328104290
+      spriteID: 26d28aca20d07ce70800000000000000
+      internalID: 9135284674282138978
       vertices: []
       indices: 
       edges: []
@@ -241,7 +238,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 91d3720b406707b45a832d8a2d1b3824
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -250,12 +247,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Sabrina_0: -9002815359668481571
-      Sabrina_1: -6505331755145360271
-      Sabrina_2: -3079686461143670477
-      Sabrina_3: 980864212213892884
-      Sabrina_4: -4181564317328104290
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

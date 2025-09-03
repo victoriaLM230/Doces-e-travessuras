@@ -870,7 +870,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Button
+  m_text: VOLTAR
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e422a60f6c98a7e41a5adcbcea69bd9c, type: 2}
   m_sharedMaterial: {fileID: 3107542750201432694, guid: e422a60f6c98a7e41a5adcbcea69bd9c, type: 2}
@@ -983,8 +983,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -264, y: 111.81}
-  m_SizeDelta: {x: 129.44, y: 223.62}
+  m_AnchoredPosition: {x: 8, y: 93}
+  m_SizeDelta: {x: 679.56, y: 248.52}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1200083503
 MonoBehaviour:
@@ -1072,7 +1072,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -534.2947, w: 0}
+  m_margin: {x: 0, y: 0, z: -2.2863462, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0

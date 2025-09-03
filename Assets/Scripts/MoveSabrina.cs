@@ -15,10 +15,12 @@ public class MoveSabrina : MonoBehaviour
 
     [Header("Som de Movimento")]
     public AudioSource somMovimento;  // arraste o AudioSource no Inspector
+    Animator animator;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
     }
 
     void Update()
@@ -42,6 +44,8 @@ public class MoveSabrina : MonoBehaviour
             {
                 somMovimento.Play();
             }
+            print("ola");
+            animator.Play("walk");
         }
         else
         {
@@ -49,6 +53,8 @@ public class MoveSabrina : MonoBehaviour
             {
                 somMovimento.Stop();
             }
+            print("tchau");
+            animator.Play("idle");
         }
         print(horizontal);
     }
