@@ -1949,6 +1949,10 @@ PrefabInstance:
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 5600743759293683822, guid: 55b3f7042afe50c4899a448f71181de5, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -83132459, guid: c350fb76e4896d646a01a3200bd2f50a, type: 3}
+    - target: {fileID: 5600743759293683822, guid: 55b3f7042afe50c4899a448f71181de5, type: 3}
       propertyPath: m_SortingOrder
       value: 3
       objectReference: {fileID: 0}
