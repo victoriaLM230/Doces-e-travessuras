@@ -878,8 +878,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Cr\xE9ditos"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 81fb2eccbdc915547845966bb43df8a4, type: 2}
-  m_sharedMaterial: {fileID: 7343627015197578190, guid: 81fb2eccbdc915547845966bb43df8a4, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e422a60f6c98a7e41a5adcbcea69bd9c, type: 2}
+  m_sharedMaterial: {fileID: 3107542750201432694, guid: e422a60f6c98a7e41a5adcbcea69bd9c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1275,8 +1275,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Jogo
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 81fb2eccbdc915547845966bb43df8a4, type: 2}
-  m_sharedMaterial: {fileID: 7343627015197578190, guid: 81fb2eccbdc915547845966bb43df8a4, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e422a60f6c98a7e41a5adcbcea69bd9c, type: 2}
+  m_sharedMaterial: {fileID: 3107542750201432694, guid: e422a60f6c98a7e41a5adcbcea69bd9c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
