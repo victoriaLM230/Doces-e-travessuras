@@ -8,10 +8,12 @@ public class MoveSabrina : MonoBehaviour
     public float raioChao = 0.2f;
     public LayerMask camadaChao;
 
+
     private float horizontal;
     private Rigidbody2D rb;
     private bool estaNoChao;
     public bool PodeMexer = true;
+
 
     [Header("Som de Movimento")]
     public AudioSource somMovimento;  // arraste o AudioSource no Inspector
@@ -57,5 +59,13 @@ public class MoveSabrina : MonoBehaviour
             animator.Play("idle");
         }
         print(horizontal);
+        if (horizontal < 0)
+        {
+            GetComponent<SpriteRenderer>().flipX = true;
+        }
+        else if (horizontal > 0)
+        {
+            GetComponent<SpriteRenderer>().flipX = false;
+        }
     }
 }
