@@ -20,5 +20,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/FlorestaFogo.unity
     guid: a74fb4304ae417e4583c48c972c8ffc4
+  - enabled: 1
+    path: Assets/Scenes/FimDoJogo.unity
+    guid: 1018c09ecfcc19345aaa72aa0c4943de
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
