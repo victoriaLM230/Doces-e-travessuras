@@ -1,9 +1,23 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 731f1baa9d144a9897cb1d341c2092b8
 folderAsset: yes
 timeCreated: 1442040525
 licenseType: Pro
 DefaultImporter:
+=======
+<<<<<<<< HEAD:Assets/TextMesh Pro/New TMP Color Gradient.asset.meta
+guid: 3ae15517007645a44b0e417ae42a8193
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+========
+guid: 731f1baa9d144a9897cb1d341c2092b8
+folderAsset: yes
+DefaultImporter:
+  externalObjects: {}
+>>>>>>>> 790d810cfb16455c580b502856c8de6cec294f92:Assets/TextMesh Pro/Resources/Fonts & Materials.meta
+>>>>>>> 790d810cfb16455c580b502856c8de6cec294f92
   userData: 
   assetBundleName: 
   assetBundleVariant: 
