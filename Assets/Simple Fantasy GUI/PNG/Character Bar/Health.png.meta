@@ -99,11 +99,7 @@ TextureImporter:
     overridden: 0
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
-<<<<<<<< Updated upstream:Assets/Simple Fantasy GUI/PNG/Character Bar/Health.png.meta
-    forceMaximumCompressionQuality_BC6H_BC7: 1
-========
     forceMaximumCompressionQuality_BC6H_BC7: 0
->>>>>>>> Stashed changes:Assets/victoria/pixilart-sprite (2).png.meta
   - serializedVersion: 4
     buildTarget: WebGL
     maxTextureSize: 2048
@@ -116,11 +112,7 @@ TextureImporter:
     overridden: 0
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
-<<<<<<<< Updated upstream:Assets/Simple Fantasy GUI/PNG/Character Bar/Health.png.meta
     forceMaximumCompressionQuality_BC6H_BC7: 1
-========
-    forceMaximumCompressionQuality_BC6H_BC7: 0
->>>>>>>> Stashed changes:Assets/victoria/pixilart-sprite (2).png.meta
   spriteSheet:
     serializedVersion: 2
     sprites: []
@@ -137,8 +129,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      pixilart-sprite (2)_0: -923994315097029292
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

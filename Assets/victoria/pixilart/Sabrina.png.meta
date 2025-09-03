@@ -144,7 +144,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: e87bc40cc266b9641bc116dc2da40d95
-      internalID: -83132459
+      internalID: -9002815359668481571
       vertices: []
       indices: 
       edges: []
@@ -166,7 +166,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: ad37899e2cb70bf46922951f9876bfe7
-      internalID: 489691335
+      internalID: -6505331755145360271
       vertices: []
       indices: 
       edges: []
@@ -188,7 +188,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: f0d9a0852bbce254e9642453a442c569
-      internalID: -860568563
+      internalID: -3079686461143670477
       vertices: []
       indices: 
       edges: []
@@ -210,7 +210,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 0e3f25788c31b8543b3b15a02e1bdfb8
-      internalID: -441826147
+      internalID: 980864212213892884
       vertices: []
       indices: 
       edges: []
@@ -232,7 +232,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 9f7933c936733c34abdaf0513ab96685
-      internalID: -1986143225
+      internalID: -4181564317328104290
       vertices: []
       indices: 
       edges: []
@@ -251,18 +251,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-<<<<<<< Updated upstream:Assets/victoria/pixilart/Sabrina.png.meta
-      Sabrina_0: -83132459
-      Sabrina_1: 489691335
-      Sabrina_2: -860568563
-      Sabrina_3: -441826147
-      Sabrina_4: -1986143225
-=======
-      pixilart-sprite_0: 4689240166119133576
-      pixilart-sprite_1: 4521018998857404175
-      pixilart-sprite_2: -4621546931983276131
-      pixilart-sprite_3: 713319685308842295
->>>>>>> Stashed changes:Assets/victoria/pixilart-sprite.png.meta
+      Sabrina_0: -9002815359668481571
+      Sabrina_1: -6505331755145360271
+      Sabrina_2: -3079686461143670477
+      Sabrina_3: 980864212213892884
+      Sabrina_4: -4181564317328104290
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
