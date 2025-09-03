@@ -331,68 +331,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 79099057}
   m_CullTransparentMesh: 1
---- !u!1 &209343017 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5666326235265992667, guid: 3a9475153d970b5459b4a0aa60e742ba, type: 3}
-  m_PrefabInstance: {fileID: 2993835028739990714}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &426848917
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 8117088792640710374, guid: 55b3f7042afe50c4899a448f71181de5, type: 3}
-      propertyPath: m_Name
-      value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 8513740510424413113, guid: 55b3f7042afe50c4899a448f71181de5, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -7.7533245
-      objectReference: {fileID: 0}
-    - target: {fileID: 8513740510424413113, guid: 55b3f7042afe50c4899a448f71181de5, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 8513740510424413113, guid: 55b3f7042afe50c4899a448f71181de5, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8513740510424413113, guid: 55b3f7042afe50c4899a448f71181de5, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8513740510424413113, guid: 55b3f7042afe50c4899a448f71181de5, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8513740510424413113, guid: 55b3f7042afe50c4899a448f71181de5, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8513740510424413113, guid: 55b3f7042afe50c4899a448f71181de5, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8513740510424413113, guid: 55b3f7042afe50c4899a448f71181de5, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8513740510424413113, guid: 55b3f7042afe50c4899a448f71181de5, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8513740510424413113, guid: 55b3f7042afe50c4899a448f71181de5, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 55b3f7042afe50c4899a448f71181de5, type: 3}
 --- !u!1 &431113457
 GameObject:
   m_ObjectHideFlags: 0
@@ -648,7 +586,7 @@ MonoBehaviour:
   - '"A"'
   falasJogador:
   - '"A"'
-  npcBruxa: {fileID: 209343017}
+  npcBruxa: {fileID: 0}
   bocaAnimada: {fileID: 0}
   dialogoAtivo: 0
   moralidade: 0
@@ -1512,75 +1450,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1880333158}
   m_CullTransparentMesh: 1
---- !u!1001 &2993835028739990714
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 5380972996179979637, guid: 3a9475153d970b5459b4a0aa60e742ba, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 4.02
-      objectReference: {fileID: 0}
-    - target: {fileID: 5380972996179979637, guid: 3a9475153d970b5459b4a0aa60e742ba, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.87
-      objectReference: {fileID: 0}
-    - target: {fileID: 5380972996179979637, guid: 3a9475153d970b5459b4a0aa60e742ba, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5380972996179979637, guid: 3a9475153d970b5459b4a0aa60e742ba, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5380972996179979637, guid: 3a9475153d970b5459b4a0aa60e742ba, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5380972996179979637, guid: 3a9475153d970b5459b4a0aa60e742ba, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5380972996179979637, guid: 3a9475153d970b5459b4a0aa60e742ba, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5380972996179979637, guid: 3a9475153d970b5459b4a0aa60e742ba, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5380972996179979637, guid: 3a9475153d970b5459b4a0aa60e742ba, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5380972996179979637, guid: 3a9475153d970b5459b4a0aa60e742ba, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5666326235265992667, guid: 3a9475153d970b5459b4a0aa60e742ba, type: 3}
-      propertyPath: m_Name
-      value: Bruxa
-      objectReference: {fileID: 0}
-    - target: {fileID: 6619415325142782049, guid: 3a9475153d970b5459b4a0aa60e742ba, type: 3}
-      propertyPath: gerenciadorDialogo
-      value: 
-      objectReference: {fileID: 812150985}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 3a9475153d970b5459b4a0aa60e742ba, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 431113460}
   - {fileID: 1195573345}
-  - {fileID: 426848917}
-  - {fileID: 2993835028739990714}
   - {fileID: 812150986}
   - {fileID: 1492659874}
   - {fileID: 697556376}

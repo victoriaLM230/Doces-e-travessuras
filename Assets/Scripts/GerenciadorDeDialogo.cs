@@ -26,8 +26,8 @@ public class GerenciadorDeDialogo : MonoBehaviour
 
     void Start()
     {
-        botaoBem.onClick.AddListener(EscolherBem);
-        botaoMal.onClick.AddListener(EscolherMal);
+       // botaoBem.onClick.AddListener(EscolherBem);
+       // botaoMal.onClick.AddListener(EscolherMal);
     }
 
     void Update()
@@ -66,8 +66,6 @@ public class GerenciadorDeDialogo : MonoBehaviour
         }
         else
         {
-            if (bocaAnimada != null)
-                bocaAnimada.falando = false;
 
             FecharDialogo();
         }
@@ -115,9 +113,6 @@ public class GerenciadorDeDialogo : MonoBehaviour
             textoNPC.text = "A luz continua dentro de você.";
         }
 
-        if (bocaAnimada != null)
-            bocaAnimada.falando = true;
-
         Invoke(nameof(FecharDialogo), 2f);
     }
 
@@ -126,10 +121,6 @@ public class GerenciadorDeDialogo : MonoBehaviour
         painelDialogo.SetActive(false);
         dialogoAtivo = false;
         Time.timeScale = 1f;
-
-        if (bocaAnimada != null)
-            bocaAnimada.falando = false;
-
         if (npcBruxa != null)
         {
             npcBruxa.SetActive(false); // Ou: Destroy(npcBruxa);

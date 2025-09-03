@@ -202,9 +202,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 968139724}
-        m_TargetAssemblyTypeName: Start, Assembly-CSharp
-        m_MethodName: Botaoparamenu
+      - m_Target: {fileID: 968139725}
+        m_TargetAssemblyTypeName: Creditos, Assembly-CSharp
+        m_MethodName: BotaoCreditos
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -335,9 +335,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 968139725}
-        m_TargetAssemblyTypeName: creditos, Assembly-CSharp
-        m_MethodName: butomcreditos
+      - m_Target: {fileID: 968139724}
+        m_TargetAssemblyTypeName: Start, Assembly-CSharp
+        m_MethodName: Botaoparamenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -726,7 +726,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58e4c65733785044296070a795200597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameSceneName: GameScene
+  gameSceneName: Felipe
 --- !u!114 &968139725
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -878,8 +878,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Cr\xE9ditos"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 81fb2eccbdc915547845966bb43df8a4, type: 2}
-  m_sharedMaterial: {fileID: 7343627015197578190, guid: 81fb2eccbdc915547845966bb43df8a4, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1275,8 +1275,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Jogo
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 81fb2eccbdc915547845966bb43df8a4, type: 2}
-  m_sharedMaterial: {fileID: 7343627015197578190, guid: 81fb2eccbdc915547845966bb43df8a4, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
