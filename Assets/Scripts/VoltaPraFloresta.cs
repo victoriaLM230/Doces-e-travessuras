@@ -15,10 +15,7 @@ public class VoltaPraFloresta : MonoBehaviour
         if (jogadorPerto && Input.GetKeyDown(KeyCode.E))
 
         {
-
-            // Troca de cena - você deve adicionar essa cena nas Build Settings 
-
-            SceneManager.LoadScene("Felipe");
+            SceneManager.LoadScene("FlorestaFogo");
 
         }
 
