@@ -27,7 +27,28 @@ public class MoveSabrina : MonoBehaviour
 
     void Update()
     {
+        //animação
+        if (horizontal != 0)
+        {
+            animator.Play("walk");
 
+        }
+
+        else
+
+        {
+            animator.Play("idle");
+
+
+        }
+        if (horizontal < 0)
+        {
+            GetComponent<SpriteRenderer>().flipX = true;
+        }
+        else if (horizontal > 0)
+        {
+            GetComponent<SpriteRenderer>().flipX = false;
+        }
 
         estaNoChao = Physics2D.OverlapCircle(checagemChao.position, raioChao, camadaChao);
 
@@ -38,6 +59,7 @@ public class MoveSabrina : MonoBehaviour
         rb.linearVelocity = new Vector2(horizontal * velocidade, rb.linearVelocity.y);
         print(horizontal);
    
+
 
     }
 }
