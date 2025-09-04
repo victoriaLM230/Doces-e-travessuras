@@ -27,47 +27,17 @@ public class MoveSabrina : MonoBehaviour
 
     void Update()
     {
-        // Verifica se está no chão usando OverlapCircle 
+
+
         estaNoChao = Physics2D.OverlapCircle(checagemChao.position, raioChao, camadaChao);
 
-        // Movimento horizontal 
+
         horizontal = Input.GetAxisRaw("Horizontal");
-       
-       
 
-        if (PodeMexer)
-        {
-            //Substituído .velocity por .linearVelocity
-           rb.linearVelocity = new Vector2(horizontal * velocidade, rb.linearVelocity.y);
-        }
 
-        // Som de movimento (somente se pressionando A ou D)
-        if (estaNoChao && horizontal != 0)
-        {
-            if (!somMovimento.isPlaying)
-            {
-                somMovimento.Play();
-            }
-            print("ola");
-            animator.Play("walk");
-        }
-        else
-        {
-            if (somMovimento.isPlaying)
-            {
-                somMovimento.Stop();
-            }
-            print("tchau");
-            animator.Play("idle");
-        }
+        rb.linearVelocity = new Vector2(horizontal * velocidade, rb.linearVelocity.y);
         print(horizontal);
-        if (horizontal < 0)
-        {
-            GetComponent<SpriteRenderer>().flipX = true;
-        }
-        else if (horizontal > 0)
-        {
-            GetComponent<SpriteRenderer>().flipX = false;
-        }
+   
+
     }
 }

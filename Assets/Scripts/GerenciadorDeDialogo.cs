@@ -15,7 +15,7 @@ public class GerenciadorDeDialogo : MonoBehaviour
     public string[] falasNPC;
     public string[] falasJogador;
 
-    public GameObject npcBruxa; // Referência ao GameObject da bruxa
+    public GameObject npcBruxa; // Referï¿½ncia ao GameObject da bruxa
  
 
     private int indiceFala = 0;
@@ -26,7 +26,8 @@ public class GerenciadorDeDialogo : MonoBehaviour
 
     void Start()
     {
-       
+        //botaoBem.onClick.AddListener(EscolherBem);
+        //botaoMal.onClick.AddListener(EscolherMal);
     }
 
     void Update()
@@ -45,8 +46,6 @@ public class GerenciadorDeDialogo : MonoBehaviour
         painelDialogo.SetActive(true);
         AtualizarFalas();
         dialogoAtivo = true;
-
-     
     }
 
     void AvancarFala()
@@ -63,19 +62,13 @@ public class GerenciadorDeDialogo : MonoBehaviour
                 Invoke(nameof(MostrarEscolhas), 0.5f);
             }
         }
-        else
-        {
-
-            FecharDialogo();
-        }
+        
     }
 
     void AtualizarFalas()
     {
         textoNPC.text = falasNPC[indiceFala];
         textoJogador.text = falasJogador[indiceFala];
-
-       
     }
 
     void MostrarEscolhas()
@@ -86,7 +79,11 @@ public class GerenciadorDeDialogo : MonoBehaviour
     {
         painelDialogo.SetActive(false);
         dialogoAtivo = false;
-        
+       
+
+        if (bocaAnimada != null)
+            bocaAnimada.falando = false;
+
         if (npcBruxa != null)
         {
             npcBruxa.SetActive(false); // Ou: Destroy(npcBruxa);

@@ -1,25 +1,25 @@
 fileFormatVersion: 2
-guid: c350fb76e4896d646a01a3200bd2f50a
+guid: d627723789bb48347be2c49fab2f816d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3475582713512457235
-    second: pixilart-sprite (3) 2_0
+      213: 8325012906951262628
+    second: pixilart-sprite (3) 1_0
   - first:
-      213: 7432613568402164004
-    second: pixilart-sprite (3) 2_1
+      213: -1898449692407271054
+    second: pixilart-sprite (3) 1_1
   - first:
-      213: 2423154289581366112
-    second: pixilart-sprite (3) 2_2
+      213: -3815071471479789641
+    second: pixilart-sprite (3) 1_2
   - first:
-      213: 2614652253349564884
-    second: pixilart-sprite (3) 2_3
+      213: 5634733395730197951
+    second: pixilart-sprite (3) 1_3
   - first:
-      213: -6807301255019327896
-    second: pixilart-sprite (3) 2_4
+      213: 2593153727079844196
+    second: pixilart-sprite (3) 1_4
   - first:
-      213: 33499818790309382
-    second: pixilart-sprite (3) 2_5
+      213: -571651788020135836
+    second: pixilart-sprite (3) 1_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -66,7 +66,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 500
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -112,7 +112,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-    buildTarget: WebGL
+    buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -143,8 +143,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e87bc40cc266b9641bc116dc2da40d95
-      internalID: -9002815359668481571
+      spriteID: af17dc559f31aee4e902b38c85b26922
+      internalID: -1976567739
       vertices: []
       indices: 
       edges: []
@@ -165,8 +165,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ad37899e2cb70bf46922951f9876bfe7
-      internalID: -6505331755145360271
+      spriteID: cbc286d5548f17848a6bbac99e9d4528
+      internalID: 1256143120
       vertices: []
       indices: 
       edges: []
@@ -187,8 +187,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f0d9a0852bbce254e9642453a442c569
-      internalID: -3079686461143670477
+      spriteID: 12fccf36e95bd3f48815394c8a84df45
+      internalID: -940478021
       vertices: []
       indices: 
       edges: []
@@ -209,8 +209,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0e3f25788c31b8543b3b15a02e1bdfb8
-      internalID: 980864212213892884
+      spriteID: 7bfc405e4f1493c49aac2266776f8a7d
+      internalID: 1909422117
       vertices: []
       indices: 
       edges: []
@@ -231,8 +231,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9f7933c936733c34abdaf0513ab96685
-      internalID: -4181564317328104290
+      spriteID: a33e79e17d1d961478bfa149a776be9c
+      internalID: -1040340268
       vertices: []
       indices: 
       edges: []
@@ -241,7 +241,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 91d3720b406707b45a832d8a2d1b3824
+    spriteID: 22194f922e6a66e4da4dd8d35918dccb
     internalID: 0
     vertices: []
     indices: 
@@ -251,11 +251,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Sabrina_0: -9002815359668481571
-      Sabrina_1: -6505331755145360271
-      Sabrina_2: -3079686461143670477
-      Sabrina_3: 980864212213892884
-      Sabrina_4: -4181564317328104290
+      Sabrina_0: -1976567739
+      Sabrina_1: 1256143120
+      Sabrina_2: -940478021
+      Sabrina_3: 1909422117
+      Sabrina_4: -1040340268
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
