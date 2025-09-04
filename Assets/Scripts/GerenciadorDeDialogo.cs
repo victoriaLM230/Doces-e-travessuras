@@ -81,8 +81,6 @@ public class GerenciadorDeDialogo : MonoBehaviour
         dialogoAtivo = false;
        
 
-        if (bocaAnimada != null)
-            bocaAnimada.falando = false;
 
         if (npcBruxa != null)
         {
